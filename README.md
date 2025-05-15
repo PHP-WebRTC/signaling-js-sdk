@@ -23,6 +23,8 @@ A lightweight and efficient WebRTC signaling library written in **TypeScript**, 
 npm install 
 ```
 
+---
+
 ## Usage
 ```javascript
 import { RTCSignaling } from '';
@@ -34,11 +36,15 @@ signaling.request(peerConnection.localDescription).then((answer) =>
 );
 ```
 
+---
+
 ## Documentation
 
 This package is part of the PHP WebRTC library. For complete documentation, examples, and API reference, visit:
 
 [PHP WebRTC Documentation](https://www.quasarstream.com/php-webrtc)
+
+---
 
 ## Credits
 
@@ -51,9 +57,13 @@ This package is part of the PHP WebRTC library. For complete documentation, exam
 - **Sana Moniri**
   - GtiHub: [sanamoniri](https://github.com/sanamoniri)
 
+---
+
 ## Reporting Issues
 
 Found a bug? Please report it on our [issues](https://github.com/php-webrtc/signaling-js-sdk/issues).
+
+---
 
 ## License
 
