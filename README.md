@@ -1,4 +1,4 @@
-# QuasarStream WebRTC Signaling Library
+# WebRTC Signaling Library for JavaScript
 
 [![License](https://img.shields.io/badge/license-BSD%203--Clause-blue.svg)](LICENSE)
 
