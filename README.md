@@ -20,14 +20,14 @@ A lightweight and efficient WebRTC signaling library written in **TypeScript**, 
 ## Installation
 
 ```bash
-npm install 
+npm i rtc-signaling
 ```
 
 ---
 
 ## Usage
 ```javascript
-import { RTCSignaling } from '';
+import { RTCSignaling } from 'rtc-signaling';
 
 const signaling = new RTCSignaling();
 
