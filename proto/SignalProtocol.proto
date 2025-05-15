@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package webrtcsignaler;
+
+enum SignalType {
+  UNKNOWN = 0;
+  OFFER = 1;
+  ANSWER = 2;
+  PRANSWER = 3;
+  ROLLBACK = 4;
+}
+
+message SignalMessage {
+  string sdp = 1;
+  SignalType type = 2;
+}
+
+message RequestMessage {
+  string messageId = 1;
+  string id = 2;
+  SignalMessage payload = 3;
+}
+
+message ResponseMessage {
+  string messageId = 1;
+  int32 statusCode = 2;
+  string errorMessage = 3;
+  SignalMessage response = 4;
+}
+
+message WebSocketMessage {
+  oneof message {
+    SignalMessage signal = 1;
+    RequestMessage request = 2;
+    ResponseMessage response = 3;
+  }
+}
